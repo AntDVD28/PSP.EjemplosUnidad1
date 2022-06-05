@@ -1,0 +1,13 @@
+1) Compilar fichero en cuestión para obtener el .class
+
+2) Crear archivo de manifiesto. Incluir la siguiente línea:
+
+Main-Class: nombre_paquete.nombre_clase
+
+Ejemplo:
+
+Main-Class: ms.ms
+
+3) Ejecutar el siguiente comando
+
+jar cmf MANIFEST.MF ms.jar ms/ms.class

@@ -1,0 +1,11 @@
+suminitrador: accede a un fichero para escribir un dato
+cliente: accede al mismo fichero para extraer los datos que contenga
+
+Comandos a ejecutar desde diferentes líneas de comamdos: 
+
+     java -jar Suministrador.jar buffer
+   
+     java -jar Cliente.jar buffer 
+
+Observaciones: incluiremos mecanismos para bloquear el fichero y que sólo una de las dos aplicaciones tenga acceso al 
+unísono. 

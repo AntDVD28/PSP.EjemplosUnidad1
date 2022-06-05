@@ -1,0 +1,24 @@
+﻿Ejemplo del uso de un recurso sincronizado
+=============================================
+
+- AccesoFichero: accede a un fichero que contiene un valor entero. Lee ese valor, lo incrementa en 1
+y escribe ese valor actualizado en el mismo fichero.
+
+- LanzarProcesos: crea multiples procesos que haran uso de la aplicacion AccesoFichero.
+
+
+Comando a lanzar desde la linea de comandos: java -jar LanzarProcesos.jar
+
+Observaciones: 
+
+- debemos de tener previamente los .jar generados y copiados en una misma carpeta. Posteriormente lanzaremos
+el comando.
+
+- hemos agregado una archivo javalog.txt donde iremos escribiendo el comportamiento de los diferentes hilos
+
+- el valor que vamos incrementando en el fichero se guarda en formato binario, en lugar de formato texto. Por lo
+que para comprobar la correción del valor final tendremos que usar un editor hexadecimal.
+
+Resultado: al visualizar el archivo javalog.txt observaremos que varios procesos hacen uso del mismo recurso(fichero)
+de forma sincronizada
+

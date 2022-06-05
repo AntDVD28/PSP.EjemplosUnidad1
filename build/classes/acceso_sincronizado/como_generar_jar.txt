@@ -1,0 +1,19 @@
+0) Es recomendable eliminar si existe la línea package
+
+1) Compilar fichero en cuestión para obtener el .class
+
+Si al compilarlo da algún error de tipo illegal character, habría que 
+volver a guardar el archivo con codificación UTF-8
+
+2) Crear archivo de manifiesto. Incluir la siguiente línea:
+
+Main-Class: nombre_clase
+
+Ejemplo:
+
+Main-Class: Escritor
+
+
+3) Ejecutar el siguiente comando
+
+jar cmf MANIFEST.MF Escritor.jar Escritor.class

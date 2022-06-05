@@ -1,0 +1,10 @@
+Para probar el ejemplo, escribir desde la línea de comandos
+
+java -jar ms.jar | java -jar inicia.jar
+
+Otro ejemplo de tuberias:
+
+java -jar generador.jar 2 | java -jar frecuencia.jar 1
+
+
+Nota: los .jar se encuentran en la carpeta dist
